@@ -11,10 +11,7 @@ export default function Settings() {
   const data = useLoaderData();
   return (
     <div>
-      <Head
-        title="Settings | Demo Template"
-        description="Settings | Demo Template"
-      />
+      <Head title="Settings | Aigron" description="Settings | Aigron" />
       settings
       <img src={react} alt="react" />
       <div>{data}</div>

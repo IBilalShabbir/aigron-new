@@ -1,6 +1,6 @@
 {
-  "short_name": "Demo Template",
-  "name": "Demo Template",
+  "short_name": "Aigron",
+  "name": "Aigron",
   "icons": [
     {
       "src": "./vite.svg",

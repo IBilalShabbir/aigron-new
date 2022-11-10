@@ -10,7 +10,7 @@ export default function Index() {
   const data = useLoaderData();
   return (
     <div>
-      <Head title="Home | Demo Template" description="Home | Demo Template" />
+      <Head title="Home | Aigron" description="Home | Aigron" />
       index
       <div>{data}</div>
       <Link to="/about">About</Link>
