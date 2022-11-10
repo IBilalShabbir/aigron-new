@@ -9,7 +9,7 @@
 }
 .aboutus__banner__content {
   position: absolute;
-  top: 300px;
+  top: 250px;
   left: 150px;
 }
 .aboutus__banner__logo {
@@ -19,7 +19,7 @@
   cursor: pointer;
   padding: 1em 3em;
   color: #02071c;
-  font-size: 16px;
+  font-size: 17px;
   border-radius: 6px;
   border: none;
   text-decoration: none;
@@ -28,4 +28,66 @@
 .aboutus__banner__button:hover {
   background-color: #02071c;
   color: #fff;
+}
+.aboutus__first__section {
+  display: flex;
+}
+.about__us__first__left {
+  width: 150px;
+}
+.about__us__first__right {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about__us__first__right img {
+  // width: 100%;
+  height: 400px;
+  width: 50%;
+  object-fit: contain;
+}
+.about__us__first__right__content {
+  width: 50%;
+}
+.about__us__first__right__content__heading {
+  font-size: 45px;
+  font-weight: bold;
+  margin-bottom: 0.6em;
+}
+.about__us__first__right__content__info {
+  width: 400px;
+}
+.aboutus__second__section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aboutus__second__section__left {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.aboutus__second__section__left__content {
+  // width: 50%;
+  margin-left: 4em;
+  margin-right: 2em;
+}
+.aboutus__second__section__left img {
+  height: 450px;
+  // width: 50%;
+  object-fit: contain;
+}
+.aboutus__second__section__left__content__heading {
+  font-size: 45px;
+  font-weight: bold;
+  margin-bottom: 0.6em;
+}
+.aboutus__second__section__left__content__info {
+  width: 400px;
+}
+.aboutus__second__section__right img {
+  width: 230px;
 }
