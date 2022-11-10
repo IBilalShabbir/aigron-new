@@ -1,5 +1,10 @@
 import React from "react";
+import { react } from "../assets";
 
 export default function About() {
-  return <div>about</div>;
+  return (
+    <div>
+      <img src={react} alt="react" />
+    </div>
+  );
 }
