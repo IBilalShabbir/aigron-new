@@ -5,3 +5,4 @@ export { default as aboutusleft } from "./aboutusleft.png";
 export { default as aboutusfirstsection } from "./aboutusfirstsection.png";
 export { default as aboutussecondsection } from "./aboutussecondsection.png";
 export { default as aboutusright } from "./aboutusright.png";
+export { default as frame } from "./frame.png";
