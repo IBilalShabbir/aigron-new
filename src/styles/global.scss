@@ -1,13 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap");
+
 *,
 *::after,
 *::before {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: "Montserrat", sans-serif; // replace this with font family
+  font-family: "Montserrat", sans-serif;
+}
+*::-webkit-scrollbar {
+  width: 10px;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(21, 87, 255);
+  border-radius: 50px;
+}
+*::-webkit-scrollbar-track {
+  background-color: #ffffff;
+  border-radius: 50px;
 }
 body {
   margin: 0;
   padding: 0;
   font-size: 16px;
+}
+.heading {
+  font-family: "Lato", sans-serif;
 }

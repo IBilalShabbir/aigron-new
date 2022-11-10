@@ -1,10 +1,43 @@
 import React from "react";
-import { aboutusbanner } from "../assets";
+import { Link } from "react-router-dom";
+import { homeSectionBanner, homeSectionBg } from "../assets";
 
 export default function index() {
+  const [showHomeSectionOverlay, setShowHomeSectionOverlay] =
+    React.useState(false);
   return (
-    <div>
-      <img style={{ width: "100%" }} src={aboutusbanner} alt="react" />
-    </div>
+    <>
+      <div className="home__section">
+        {showHomeSectionOverlay ? (
+          <>
+            <img
+              src={homeSectionBg}
+              alt="homeSectionBg"
+              className="home__section__img"
+            />
+            <div className="home__section__overlay">
+              <div className="home__section__overlay__heading heading">
+                Trusted partner for your <span>AI and Data projects</span>
+              </div>
+              <Link to="/contact" className="home__section__overlay__link">
+                Get in Touch
+              </Link>
+            </div>
+          </>
+        ) : (
+          <>
+            <video
+              src={homeSectionBanner}
+              alt="homeSectionBanner"
+              muted
+              autoPlay
+              className="home__section__video"
+              onEnded={() => setShowHomeSectionOverlay(true)}
+            />
+            <div className="home__section__overlay" />
+          </>
+        )}
+      </div>
+    </>
   );
 }
