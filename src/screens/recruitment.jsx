@@ -1,5 +1,9 @@
 import React from "react";
-import { recruitmentAbout, recruitmentHomeBg } from "../assets";
+import {
+  hiringMotivation,
+  recruitmentAbout,
+  recruitmentHomeBg,
+} from "../assets";
 
 export default function Recruitment() {
   return (
@@ -51,6 +55,13 @@ export default function Recruitment() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="recruitment__img__wrapper">
+        <img
+          src={hiringMotivation}
+          alt="hiringMotivation"
+          className="recruitment__img"
+        />
       </div>
     </>
   );

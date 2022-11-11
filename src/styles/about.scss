@@ -156,10 +156,16 @@
     margin-right: 0em;
     width: 100%;
     margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .about__details__section__content__top__right {
     width: 100%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .about__details__section__content__bottom {
     flex-direction: column-reverse;
@@ -168,10 +174,16 @@
     margin-right: 0em;
     width: 100%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .about__details__section__content__bottom__right {
     width: 100%;
     margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 @media (max-width: 550px) {

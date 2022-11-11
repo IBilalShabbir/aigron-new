@@ -691,55 +691,59 @@ export default function Header() {
         </div>
         {isMenuOpen && (
           <div className="header__panel">
-            <div className="header__panel__content">
-              {whichMenu === "services"
-                ? servicesLinks.map((item, index) => (
-                    <Link
-                      to={item.to}
-                      className="header__panel__content__entry"
-                    >
-                      <div className="header__panel__content__entry__icon">
-                        {item.icon}
-                      </div>
-                      <div className="header__panel__content__entry__text">
-                        {item.title}
-                      </div>
-                    </Link>
-                  ))
-                : whichMenu === "expertise"
-                ? expertiseLinks.map((item, index) => (
-                    <button
-                      onClick={() => {
+            {whichMenu === "services"
+              ? servicesLinks.map((item, index) => (
+                  <Link
+                    key={index}
+                    to={item.to}
+                    className="header__panel__entry"
+                  >
+                    <div className="header__panel__entry__icon">
+                      {item.icon}
+                    </div>
+                    <div className="header__panel__entry__text">
+                      {item.title}
+                    </div>
+                  </Link>
+                ))
+              : whichMenu === "expertise"
+              ? expertiseLinks.map((item, index) => (
+                  <Link
+                    key={index}
+                    to="/"
+                    onClick={() => {
+                      setTimeout(() => {
                         document.getElementById("expertise").scrollIntoView({
                           behavior: "smooth",
                         });
-                      }}
-                      className="header__panel__content__entry"
-                    >
-                      <div className="header__panel__content__entry__icon">
-                        {item.icon}
-                      </div>
-                      <div className="header__panel__content__entry__text">
-                        {item.title}
-                      </div>
-                    </button>
-                  ))
-                : whichMenu === "company"
-                ? companyLinks.map((item, index) => (
-                    <Link
-                      to={item.to}
-                      className="header__panel__content__entry"
-                    >
-                      <div className="header__panel__content__entry__icon">
-                        {item.icon}
-                      </div>
-                      <div className="header__panel__content__entry__text">
-                        {item.title}
-                      </div>
-                    </Link>
-                  ))
-                : null}
-            </div>
+                      }, 1000);
+                    }}
+                    className="header__panel__entry"
+                  >
+                    <div className="header__panel__entry__icon">
+                      {item.icon}
+                    </div>
+                    <div className="header__panel__entry__text">
+                      {item.title}
+                    </div>
+                  </Link>
+                ))
+              : whichMenu === "company"
+              ? companyLinks.map((item, index) => (
+                  <Link
+                    key={index}
+                    to={item.to}
+                    className="header__panel__entry"
+                  >
+                    <div className="header__panel__entry__icon">
+                      {item.icon}
+                    </div>
+                    <div className="header__panel__entry__text">
+                      {item.title}
+                    </div>
+                  </Link>
+                ))
+              : null}
           </div>
         )}
       </div>
