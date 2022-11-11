@@ -6,3 +6,4 @@ export { default as aboutDetailsBg } from "./aboutDetailsBg.png";
 export { default as aboutUsImage } from "./aboutUsImage.png";
 export { default as missionAndVision } from "./missionAndVision.png";
 export { default as aboutHomeSectionBg } from "./aboutHomeSectionBg.png";
+export { default as careerHomeSectionBg } from "./careerHomeSectionBg.png";
