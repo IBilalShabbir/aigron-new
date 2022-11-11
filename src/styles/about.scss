@@ -1,0 +1,99 @@
+.about__details__section {
+  background: url("../assets/aboutDetailsBg.png"), no-repeat;
+  background-size: cover;
+  padding: 7em 0em;
+  width: 100%;
+}
+.about__details__section__content {
+  width: 100%;
+  max-width: 1366px;
+  margin: 0em auto;
+  padding: 0em 2em;
+}
+.about__details__section__content__top {
+  display: flex;
+  align-items: center;
+}
+.about__details__section__content__top__left,
+.about__details__section__content__top__right {
+  flex: 1;
+}
+.about__details__section__content__top__left {
+  margin-right: 5em;
+}
+.about__details__section__content__top__left__img {
+  width: 100%;
+  max-width: 550px;
+}
+.about__details__section__content__top__right__heading {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 1em;
+  width: 100%;
+  max-width: 550px;
+}
+.about__details__section__content__top__right__info {
+  font-size: 14px;
+  width: 100%;
+  max-width: 550px;
+}
+.about__details__section__content__bottom {
+  display: flex;
+  align-items: center;
+}
+.about__details__section__content__bottom__left,
+.about__details__section__content__bottom__right {
+  flex: 1;
+}
+.about__details__section__content__bottom__left {
+  margin-right: 5em;
+}
+.about__details__section__content__bottom__right__img {
+  width: 100%;
+  max-width: 550px;
+}
+.about__details__section__content__bottom__left__heading {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 1em;
+  width: 100%;
+  max-width: 550px;
+}
+.about__details__section__content__bottom__left__info {
+  font-size: 14px;
+  width: 100%;
+  max-width: 550px;
+}
+@media (max-width: 900px) {
+  .about__details__section__content__top__right__heading,
+  .about__details__section__content__bottom__left__heading {
+    font-size: 25px;
+  }
+}
+@media (max-width: 750px) {
+  .about__details__section__content__top {
+    flex-direction: column;
+    margin-bottom: 5em;
+  }
+  .about__details__section__content__top__left {
+    margin-right: 0em;
+    width: 100%;
+    margin-bottom: 2em;
+  }
+  .about__details__section__content__top__right {
+    width: 100%;
+    text-align: center;
+  }
+  .about__details__section__content__bottom {
+    flex-direction: column-reverse;
+  }
+  .about__details__section__content__bottom__left {
+    margin-right: 0em;
+    width: 100%;
+    text-align: center;
+  }
+  .about__details__section__content__bottom__right {
+    width: 100%;
+    margin-bottom: 2em;
+  }
+}
