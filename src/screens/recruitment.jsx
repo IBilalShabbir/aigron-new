@@ -1,19 +1,17 @@
 import React from "react";
-import { softwareDevelopment } from "../assets";
+import { recruitmentHomeBg } from "../assets";
 
-export default function SoftwareDevelopment() {
+export default function Recruitment() {
   return (
     <>
       <div className="jumbotron">
         <img
-          src={softwareDevelopment}
-          alt="softwareDevelopment"
+          src={recruitmentHomeBg}
+          alt="recruitmentHomeBg"
           className="jumbotron__img"
         />
         <div className="jumbotron__overlay">
-          <div className="jumbotron__overlay__heading">
-            Software Development
-          </div>
+          <div className="jumbotron__overlay__heading">Recruitment</div>
           <div className="jumbotron__overlay__sub__heading">
             Fill your open position with <span>Professionals</span>
           </div>
