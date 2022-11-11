@@ -66,6 +66,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 .aboutus__second__section__left {
   display: flex;
@@ -89,4 +90,149 @@
 }
 .aboutus__second__section__left__content__info {
   width: 400px;
+}
+
+.aboutus__first__section {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.aboutus__second__section {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+@media (max-width: 1460px) {
+  .aboutus__second__section__right__one {
+    display: none;
+  }
+  .about__us__first__left__two {
+    display: none;
+  }
+  .about__us__first__right {
+    margin-right: 3em;
+  }
+  .aboutus__second__section__left {
+    margin-left: 3em;
+  }
+  .aboutus__second__section__left img {
+    height: 400px;
+  }
+  .about__us__first__right img {
+    height: 350px;
+  }
+  .aboutus__second__section__right {
+    margin-left: 3em;
+  }
+  .aboutus__second__section__right {
+    margin-left: 0em;
+  }
+  .about__us__first__right img {
+    width: 56%;
+  }
+}
+@media (max-width: 1220px) {
+  .about__us__first__left img {
+    width: 180px;
+  }
+  .aboutus__second__section__right__two {
+    width: 150px;
+  }
+  .aboutus__second__section__left {
+    margin-left: 0em;
+  }
+}
+@media (max-width: 1100px) {
+  .about__us__first__left {
+    display: none;
+  }
+  .aboutus__second__section__right__two {
+    display: none;
+  }
+  .aboutus__first__section {
+    margin: 3em 0em;
+  }
+  .aboutus__second__section__left {
+    margin-top: 2em;
+  }
+}
+@media (max-width: 960px) {
+  .aboutus__second__section__left__content {
+    margin-right: 1em;
+  }
+  .about__us__first__right__content {
+    margin-left: 1em;
+  }
+  .aboutus__second__section__left img {
+    height: 320px;
+  }
+  .about__us__first__right img {
+    height: 300px;
+  }
+  .about__us__first__right img {
+    width: 50%;
+  }
+  .about__us__first__right {
+    margin-right: 6em;
+  }
+}
+@media (max-width: 800px) {
+  .aboutus__banner__content {
+    top: 200px;
+    left: 90px;
+  }
+  .aboutus__banner__logo img {
+    width: 300px;
+  }
+  .aboutus__banner__button {
+    font-size: 15px;
+  }
+  .about__us__first__right__content__heading {
+    font-size: 35px;
+  }
+  .about__us__first__right__content__info {
+    width: 300px;
+  }
+  .aboutus__second__section__left__content__heading {
+    font-size: 35px;
+  }
+  .aboutus__second__section__left__content__info {
+    width: 300px;
+  }
+  .aboutus__second__section__left img {
+    height: 350px;
+  }
+  .about__us__first__right {
+    margin-right: 0em;
+  }
+  .aboutus__banner img {
+    height: 500px;
+  }
+}
+@media (max-width: 750px) {
+  .about__us__first__right {
+    flex-direction: column;
+  }
+  .about__us__first__right__content {
+    margin-left: 0em;
+  }
+  .about__us__first__right__content {
+    margin-top: 2em;
+  }
+  .aboutus__second__section__left {
+    flex-direction: column;
+    margin-top: 3em;
+  }
+  .aboutus__second__section__left__content {
+    margin-bottom: 3em;
+  }
+  .about__us__first__right img {
+    width: 100%;
+  }
+  .about__us__first__right__content {
+    width: 67%;
+  }
+  .aboutus__second__section__left__content {
+    width: 67%;
+  }
 }
