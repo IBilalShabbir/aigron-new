@@ -17,6 +17,12 @@
   background-color: #ffffff;
   border-radius: 50px;
 }
+a:hover,
+button:hover,
+input:hover,
+input:focus {
+  transition: 300ms ease-in-out;
+}
 body {
   margin: 0;
   padding: 0;
