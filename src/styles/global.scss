@@ -7,6 +7,7 @@
 }
 *::-webkit-scrollbar {
   width: 10px;
+  height: 10px;
 }
 *::-webkit-scrollbar-thumb {
   background-color: rgb(21, 87, 255);
@@ -20,6 +21,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: 16px;
+  overflow-x: hidden;
 }
 .heading {
   font-family: "Lato", sans-serif;

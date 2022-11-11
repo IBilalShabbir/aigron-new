@@ -1,3 +1,53 @@
+.about__home__section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  max-height: 900px;
+  overflow: hidden;
+}
+.about__home__section__img {
+  width: 100%;
+  height: 100%;
+}
+.about__home__section__overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+.about__home__section__overlay__content {
+  width: 100%;
+  max-width: 1366px;
+  padding: 0em 2em;
+  padding-top: 5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0em auto;
+  height: 100%;
+}
+.about__home__section__overlay__content__img {
+  width: 100%;
+  max-width: 350px;
+  margin-bottom: 3em;
+}
+.about__home__section__overlay__content__button {
+  padding: 0em 2em;
+  height: 45px;
+  border-radius: 5px;
+  border: 1px solid white;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+.about__home__section__overlay__content__button:hover {
+  transition: 300ms ease-in-out;
+  background-color: transparent;
+  color: white;
+}
 .about__details__section {
   background: url("../assets/aboutDetailsBg.png"), no-repeat;
   background-size: cover;
@@ -64,6 +114,30 @@
   width: 100%;
   max-width: 550px;
 }
+@media (max-width: 1366px) {
+  .about__home__section__overlay__content,
+  .about__details__section__content {
+    max-width: 1200px;
+  }
+}
+@media (max-width: 1200px) {
+  .about__home__section__img {
+    width: 120%;
+    margin-left: -15%;
+  }
+}
+@media (max-width: 1024px) {
+  .about__home__section {
+    max-height: 700px;
+  }
+  .about__home__section__img {
+    width: 130%;
+    margin-left: -25%;
+  }
+  .about__home__section__overlay__content__img {
+    max-width: 300px;
+  }
+}
 @media (max-width: 900px) {
   .about__details__section__content__top__right__heading,
   .about__details__section__content__bottom__left__heading {
@@ -71,6 +145,10 @@
   }
 }
 @media (max-width: 750px) {
+  .about__home__section__img {
+    width: 200%;
+    margin-left: -50%;
+  }
   .about__details__section__content__top {
     flex-direction: column;
     margin-bottom: 5em;
@@ -94,6 +172,25 @@
   }
   .about__details__section__content__bottom__right {
     width: 100%;
+    margin-bottom: 2em;
+  }
+}
+@media (max-width: 550px) {
+  .about__home__section {
+    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about__home__section__img {
+    width: 200%;
+    margin-left: -90%;
+  }
+  .about__home__section__overlay__content {
+    align-items: center;
+  }
+  .about__home__section__overlay__content__img {
+    max-width: 250px;
     margin-bottom: 2em;
   }
 }

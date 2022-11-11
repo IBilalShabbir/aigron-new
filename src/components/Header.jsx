@@ -562,7 +562,7 @@ export default function Header() {
         </svg>
       ),
       title: "About Us",
-      link: "/about",
+      to: "/about",
     },
     {
       icon: (
@@ -628,7 +628,7 @@ export default function Header() {
         </svg>
       ),
       title: "Career",
-      link: "/career",
+      to: "/career",
     },
   ];
   return (
@@ -668,7 +668,14 @@ export default function Header() {
             </button>
           </div>
           <div className="header__content__actions">
-            <button className="header__content__actions__button">
+            <button
+              onClick={() => {
+                document
+                  .getElementById("footer")
+                  .scrollIntoView({ befavior: "smooth" });
+              }}
+              className="header__content__actions__button"
+            >
               Get in Touch
             </button>
             <div className="header__content__actions__language">
