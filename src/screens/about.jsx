@@ -37,9 +37,16 @@ export default function About() {
               to the next level through digitalisation.
             </div>
           </div>
+        </div>{" "}
+        <div className="aboutus__second__section__right">
+          <img src={aboutusleft} alt="aboutusright" />
         </div>
       </section>
       <section className="aboutus__second__section">
+        {" "}
+        <div className="about__us__first__left">
+          <img src={aboutusleft} alt="aboutusleft" />
+        </div>
         <div className="aboutus__second__section__left">
           <div className="aboutus__second__section__left__content">
             <div className="aboutus__second__section__left__content__heading">
@@ -53,10 +60,12 @@ export default function About() {
               contribute to a better and more sustainable world.
             </div>
           </div>
-          <img src={aboutussecondsection} alt="aboutussecondsection" />
+          <div className="aboutus__second__section__right">
+            <img src={aboutussecondsection} alt="aboutussecondsection" />
+          </div>
         </div>
         <div className="aboutus__second__section__right">
-          <img src={aboutusright} alt="aboutusright" />
+          <img src={aboutusleft} alt="aboutusright" />
         </div>
       </section>
     </>
