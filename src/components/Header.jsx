@@ -7,6 +7,7 @@ import OutsideClickHandler from "react-outside-click-handler";
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const [whichMenu, setWhichMenu] = React.useState("servcies");
+
   const servicesLinks = [
     {
       icon: (
@@ -631,10 +632,18 @@ export default function Header() {
       to: "/career",
     },
   ];
+
   return (
     <OutsideClickHandler onOutsideClick={() => setIsMenuOpen(false)}>
       <div className="header">
-        <div className="header__content">
+        <div
+          className="header__content"
+          onClick={() => {
+            if (isMenuOpen) {
+              setIsMenuOpen(false);
+            }
+          }}
+        >
           <Link to="/" className="header__content__logo">
             <img src={logo} alt="logo" className="header__content__logo__img" />
           </Link>
