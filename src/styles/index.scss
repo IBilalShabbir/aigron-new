@@ -149,6 +149,104 @@
 .home__services__content__entry:hover * {
   color: white;
 }
+.home__about {
+  position: relative;
+  height: 600px;
+  width: 100%;
+}
+.home__about__img {
+  width: 100%;
+  height: 100%;
+}
+.home__about__overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+.home__about__overlay__content {
+  width: 100%;
+  max-width: 1366px;
+  margin: 0em auto;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0em 2em;
+}
+.home__about__overlay__content__left {
+  flex: 1;
+  margin-right: 2em;
+}
+.home__about__overlay__content__left__heading {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 0.5em;
+  width: 100%;
+  max-width: 400px;
+}
+.home__about__overlay__content__left__info {
+  color: white;
+  font-size: 14px;
+  width: 100%;
+  max-width: 500px;
+}
+.home__about__overlay__content__right {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+.home__about__overlay__content__right__button__prev,
+.home__about__overlay__content__right__button__next {
+  position: absolute;
+  color: black;
+  height: 40px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0em 1em;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  z-index: 999;
+  cursor: pointer;
+}
+.swiper-button-disabled {
+  opacity: 0.5;
+}
+.home__about__overlay__content__right__button__prev {
+  top: 4em;
+}
+.home__about__overlay__content__right__button__next {
+  bottom: 4em;
+}
+.home__about__overlay__content__right__button__prev:hover,
+.home__about__overlay__content__right__button__next:hover {
+  background-color: white;
+}
+.home__about__overlay__content__right__item {
+  background-color: white;
+  padding: 0.3em 0.5em;
+  user-select: none;
+}
+.home__about__overlay__content__right__item img {
+  width: 100px;
+  user-select: none;
+}
+@media (max-width: 1366px) {
+  .home__about__overlay__content {
+    max-width: 1200px;
+  }
+  .home__services__content {
+    max-width: 1200px;
+  }
+}
 @media (max-width: 1200px) {
   .home__services__content {
     flex-wrap: wrap;

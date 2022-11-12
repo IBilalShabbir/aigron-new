@@ -12,6 +12,8 @@ export { default as hiringProcessBg } from "./hiringProcessBg.png";
 export { default as homeSectionBg } from "./homeSectionBg.png";
 export { default as hiringProcess } from "./hiringProcess.png";
 export { default as aboutUsImage } from "./aboutUsImage.png";
+export { default as homeAboutBg } from "./homeAboutBg.png";
 export { default as howWeWork } from "./howWeWork.png";
 export { default as usaFlog } from "./usaFlog.png";
 export { default as logo } from "./logo.svg";
+export { default as icon } from "./icon.png";
