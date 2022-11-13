@@ -23,4 +23,5 @@ export { default as Kuwait } from "./Kuwait.png";
 export { default as Netherland } from "./Netherland.png";
 export { default as recuitmentLeft } from "./recuitmentLeft.png";
 export { default as recuitmentRight } from "./recuitmentRight.png";
+export { default as dedicatedResourcesAboutBg } from "./dedicatedResourcesAboutBg.png";
 export { default as map } from "./map.png";
