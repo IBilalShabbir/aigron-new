@@ -17,3 +17,8 @@ export { default as howWeWork } from "./howWeWork.png";
 export { default as usaFlog } from "./usaFlog.png";
 export { default as logo } from "./logo.svg";
 export { default as icon } from "./icon.png";
+export { default as Germany } from "./Germany.png";
+export { default as Pakistan } from "./Pakistan.png";
+export { default as Kuwait } from "./Kuwait.png";
+export { default as Netherland } from "./Netherland.png";
+export { default as map } from "./map.png";
