@@ -654,6 +654,10 @@ export default function Header() {
                 setIsMenuOpen(true);
                 setWhichMenu("services");
               }}
+              onClick={() => {
+                setIsMenuOpen(true);
+                setWhichMenu("services");
+              }}
             >
               Services
             </button>
@@ -663,12 +667,20 @@ export default function Header() {
                 setIsMenuOpen(true);
                 setWhichMenu("expertise");
               }}
+              onClick={() => {
+                setIsMenuOpen(true);
+                setWhichMenu("expertise");
+              }}
             >
               Expertise
             </button>
             <button
               className="header__content__nav__link"
               onMouseOver={() => {
+                setIsMenuOpen(true);
+                setWhichMenu("company");
+              }}
+              onClick={() => {
                 setIsMenuOpen(true);
                 setWhichMenu("company");
               }}
@@ -725,7 +737,7 @@ export default function Header() {
                         document.getElementById("expertise").scrollIntoView({
                           behavior: "smooth",
                         });
-                      }, 1000);
+                      }, 3000);
                     }}
                     className="header__panel__entry"
                   >

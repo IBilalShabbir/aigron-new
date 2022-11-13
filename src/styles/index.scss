@@ -239,11 +239,72 @@
   width: 100px;
   user-select: none;
 }
+.home__expertise {
+  width: 100%;
+  padding: 7em 0em;
+  background: linear-gradient(#236bbd, #073c77);
+}
+.home__expertise__content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1366px;
+  margin: 0em auto;
+  padding: 0em 2em;
+}
+.home__expertise__content__main {
+  margin-left: 2em;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.home__expertise__content__main__entry {
+  padding: 2em;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin: 2em;
+  margin-right: 0em;
+  display: flex;
+  cursor: pointer;
+  text-decoration: none;
+}
+.home__expertise__content__main__entry__content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 1em;
+}
+.home__expertise__content__main__entry__content__heading {
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+.home__expertise__content__main__entry__content__info {
+  color: white;
+  font-size: 14px;
+}
+.home__expertise__content__main__entry__content__link {
+  color: white;
+  font-size: 16px;
+  margin-top: 1em;
+}
+.home__expertise__content__main__entry:hover {
+  border-color: transparent;
+  background: linear-gradient(135deg, #0ecbba, #0ecbba, #4957c4);
+}
+.home__expertise__content__main__entry:hover * {
+  color: white;
+  fill: white;
+}
 @media (max-width: 1366px) {
   .home__about__overlay__content {
     max-width: 1200px;
   }
   .home__services__content {
+    max-width: 1200px;
+  }
+  .home__expertise__content {
     max-width: 1200px;
   }
 }
@@ -255,6 +316,14 @@
   .home__services__content__entry {
     min-width: 50%;
     max-width: 50%;
+  }
+}
+@media (max-width: 1000px) {
+  .home__expertise__content__main {
+    flex-direction: column;
+  }
+  .home__expertise__content__main__left {
+    margin-bottom: -2em;
   }
 }
 @media (max-width: 800px) {
@@ -271,5 +340,14 @@
   }
   .home__section {
     max-height: 700px;
+  }
+  .home__expertise__content {
+    flex-direction: column;
+  }
+  .home__expertise__content__main {
+    margin-left: 0em;
+  }
+  .home__expertise__content__main__entry {
+    margin-left: 0em;
   }
 }
