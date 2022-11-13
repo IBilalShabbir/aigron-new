@@ -3,6 +3,8 @@ import {
   hiringMotivation,
   recruitmentAbout,
   recruitmentHomeBg,
+  recuitmentLeft,
+  recuitmentRight,
 } from "../assets";
 
 export default function Recruitment() {
@@ -57,6 +59,44 @@ export default function Recruitment() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="recuitments__stats">
+        <img
+          src={recuitmentLeft}
+          alt="recuitmentLeft"
+          className="recuitments__stats__left"
+        />
+        <div className="recuitments__stats__content">
+          <div className="recuitments__stats__content__entry">
+            <div className="recuitments__stats__content__entry__heading">
+              15+
+            </div>
+            <div className="recuitments__stats__content__entry__info">
+              years of experience at corporate organizations
+            </div>
+          </div>
+          <div className="recuitments__stats__content__entry">
+            <div className="recuitments__stats__content__entry__heading">
+              IT <span>Professional</span>
+            </div>
+            <div className="recuitments__stats__content__entry__info">
+              years of experience at corporate organizations
+            </div>
+          </div>
+          <div className="recuitments__stats__content__entry">
+            <div className="recuitments__stats__content__entry__heading">
+              200+
+            </div>
+            <div className="recuitments__stats__content__entry__info">
+              satisfied partners
+            </div>
+          </div>
+        </div>
+        <img
+          src={recuitmentRight}
+          alt="recuitmentRight"
+          className="recuitments__stats__right"
+        />
       </div>
       <div className="recruitment__img__wrapper">
         <img
