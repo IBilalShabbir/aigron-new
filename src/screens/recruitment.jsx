@@ -15,20 +15,22 @@ export default function Recruitment() {
           className="jumbotron__img"
         />
         <div className="jumbotron__overlay">
-          <div className="jumbotron__overlay__heading">Recruitment</div>
-          <div className="jumbotron__overlay__sub__heading">
-            Fill your open position with <span>Professionals</span>
+          <div className="jumbotron__overlay__content">
+            <div className="jumbotron__overlay__heading">Recruitment</div>
+            <div className="jumbotron__overlay__sub__heading">
+              Fill your open position with <span>Professionals</span>
+            </div>
+            <button
+              onClick={() => {
+                docmment
+                  .getElementById("footer")
+                  .scrollIntoView({ behavior: "smooth" });
+              }}
+              className="jumbotron__overlay__button"
+            >
+              Get in Touch
+            </button>
           </div>
-          <button
-            onClick={() => {
-              docmment
-                .getElementById("footer")
-                .scrollIntoView({ behavior: "smooth" });
-            }}
-            className="jumbotron__overlay__button"
-          >
-            Get in Touch
-          </button>
         </div>
       </div>
       <div className="about__details__section about__details__section__reverse">
