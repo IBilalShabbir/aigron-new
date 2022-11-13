@@ -1,12 +1,28 @@
-import React from "react";
-import { ChevronDown } from "react-feather";
-import { Link } from "react-router-dom";
+import React, { useLayoutEffect } from "react";
+import { ChevronDown, Menu, X } from "react-feather";
+import { Link } from "../Router";
 import { logo, usaFlog } from "../assets";
 import OutsideClickHandler from "react-outside-click-handler";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const [whichMenu, setWhichMenu] = React.useState("servcies");
+  const [isNavOpen, setIsNavOpen] = React.useState(true);
+
+  useLayoutEffect(() => {
+    if (window.innerWidth <= 1000) {
+      setIsNavOpen(false);
+    } else {
+      setIsNavOpen(true);
+    }
+    window.addEventListener("resize", () => {
+      if (window.innerWidth <= 1000) {
+        setIsNavOpen(false);
+      } else {
+        setIsNavOpen(true);
+      }
+    });
+  }, []);
 
   const servicesLinks = [
     {
@@ -634,7 +650,14 @@ export default function Header() {
   ];
 
   return (
-    <OutsideClickHandler onOutsideClick={() => setIsMenuOpen(false)}>
+    <OutsideClickHandler
+      onOutsideClick={() => {
+        setIsMenuOpen(false);
+        if (window.innerWidth <= 1000) {
+          setIsNavOpen(false);
+        }
+      }}
+    >
       <div className="header">
         <div
           className="header__content"
@@ -642,52 +665,75 @@ export default function Header() {
             if (isMenuOpen) {
               setIsMenuOpen(false);
             }
+            if (isNavOpen && window.innerWidth <= 1000) {
+              setIsNavOpen(false);
+            }
           }}
         >
           <Link to="/" className="header__content__logo">
             <img src={logo} alt="logo" className="header__content__logo__img" />
           </Link>
-          <div className="header__content__nav">
-            <button
-              className="header__content__nav__link"
-              onMouseOver={() => {
-                setIsMenuOpen(true);
-                setWhichMenu("services");
-              }}
-              onClick={() => {
-                setIsMenuOpen(true);
-                setWhichMenu("services");
-              }}
-            >
-              Services
-            </button>
-            <button
-              className="header__content__nav__link"
-              onMouseOver={() => {
-                setIsMenuOpen(true);
-                setWhichMenu("expertise");
-              }}
-              onClick={() => {
-                setIsMenuOpen(true);
-                setWhichMenu("expertise");
-              }}
-            >
-              Expertise
-            </button>
-            <button
-              className="header__content__nav__link"
-              onMouseOver={() => {
-                setIsMenuOpen(true);
-                setWhichMenu("company");
-              }}
-              onClick={() => {
-                setIsMenuOpen(true);
-                setWhichMenu("company");
-              }}
-            >
-              Company
-            </button>
-          </div>
+          {isNavOpen && (
+            <div className="header__content__nav">
+              <button
+                className="header__content__nav__link"
+                onMouseOver={() => {
+                  setIsMenuOpen(true);
+                  setWhichMenu("services");
+                  if (window.innerWidth <= 1000) {
+                    setIsNavOpen(false);
+                  }
+                }}
+                onClick={() => {
+                  setIsMenuOpen(true);
+                  setWhichMenu("services");
+                  if (window.innerWidth <= 1000) {
+                    setIsNavOpen(false);
+                  }
+                }}
+              >
+                Services
+              </button>
+              <button
+                className="header__content__nav__link"
+                onMouseOver={() => {
+                  setIsMenuOpen(true);
+                  setWhichMenu("expertise");
+                  if (window.innerWidth <= 1000) {
+                    setIsNavOpen(false);
+                  }
+                }}
+                onClick={() => {
+                  setIsMenuOpen(true);
+                  setWhichMenu("expertise");
+                  if (window.innerWidth <= 1000) {
+                    setIsNavOpen(false);
+                  }
+                }}
+              >
+                Expertise
+              </button>
+              <button
+                className="header__content__nav__link"
+                onMouseOver={() => {
+                  setIsMenuOpen(true);
+                  setWhichMenu("company");
+                  if (window.innerWidth <= 1000) {
+                    setIsNavOpen(false);
+                  }
+                }}
+                onClick={() => {
+                  setIsMenuOpen(true);
+                  setWhichMenu("company");
+                  if (window.innerWidth <= 1000) {
+                    setIsNavOpen(false);
+                  }
+                }}
+              >
+                Company
+              </button>
+            </div>
+          )}
           <div className="header__content__actions">
             <button
               onClick={() => {
@@ -708,6 +754,18 @@ export default function Header() {
               Eng
               <ChevronDown size={20} color="currentColor" />
             </div>
+            <button
+              className="header__content__actions__menu"
+              onClick={() => {
+                setIsNavOpen(true);
+              }}
+            >
+              {isNavOpen ? (
+                <X size={20} color="currentColor" />
+              ) : (
+                <Menu size={20} color="currentColor" />
+              )}
+            </button>
           </div>
         </div>
         {isMenuOpen && (
@@ -717,6 +775,7 @@ export default function Header() {
                   <Link
                     key={index}
                     to={item.to}
+                    onClick={() => setIsMenuOpen(false)}
                     className="header__panel__entry"
                   >
                     <div className="header__panel__entry__icon">
@@ -733,6 +792,7 @@ export default function Header() {
                     key={index}
                     to="/"
                     onClick={() => {
+                      setIsMenuOpen(false);
                       setTimeout(() => {
                         document.getElementById("expertise").scrollIntoView({
                           behavior: "smooth",
@@ -754,6 +814,7 @@ export default function Header() {
                   <Link
                     key={index}
                     to={item.to}
+                    onClick={() => setIsMenuOpen(false)}
                     className="header__panel__entry"
                   >
                     <div className="header__panel__entry__icon">

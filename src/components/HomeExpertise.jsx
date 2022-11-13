@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useLayoutEffect, useState } from "react";
+import { Link } from "../Router";
 
 export default function HomeExpertise() {
   const [isMobile, setIsMobile] = useState(false);
-  useEffect(() => {
+
+  useLayoutEffect(() => {
     if (window.innerWidth <= 800) {
       setIsMobile(true);
     } else {

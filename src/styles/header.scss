@@ -75,6 +75,18 @@
 .header__content__actions__language svg {
   margin-left: 0.3em;
 }
+.header__content__actions__menu {
+  width: 40px;
+  height: 40px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: white;
+  margin-left: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+}
 .header__panel {
   position: absolute;
   top: 5em;
@@ -153,6 +165,22 @@
     margin-bottom: 0em;
     text-align: left !important;
   }
+  .header__content__nav {
+    position: absolute;
+    top: 0px;
+    flex-direction: column;
+    top: 5em;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: calc(100% - 4em);
+    padding: 2em;
+    border-radius: 10px;
+  }
+  .header__content__nav__link {
+    padding: 1em 2em;
+  }
+  .header__content__actions__menu {
+    display: flex;
+  }
 }
 @media (max-width: 600px) {
   .header__panel__entry__icon {
@@ -164,5 +192,15 @@
   }
   .header__panel__entry__text {
     font-size: 16px;
+  }
+  .header__content__logo__img {
+    width: 150px;
+  }
+  .header__content__actions {
+    scale: 0.9;
+    margin-right: -0.5em;
+  }
+  .header__content__actions__button {
+    display: none;
   }
 }

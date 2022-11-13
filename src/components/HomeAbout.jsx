@@ -1,10 +1,27 @@
-import React, { useRef } from "react";
+import React, { useLayoutEffect, useRef, useState } from "react";
 import { homeAboutBg, icon } from "../assets";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
 import { ChevronDown, ChevronUp } from "react-feather";
 
 export default function HomeAbout({}) {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useLayoutEffect(() => {
+    if (window.innerWidth <= 800) {
+      setIsMobile(true);
+    } else {
+      setIsMobile(false);
+    }
+    window.addEventListener("resize", () => {
+      if (window.innerWidth <= 800) {
+        setIsMobile(true);
+      } else {
+        setIsMobile(false);
+      }
+    });
+  }, []);
+
   const prevRef = useRef();
   const nextRef = useRef();
   return (
@@ -40,11 +57,12 @@ export default function HomeAbout({}) {
             </div>
             <Swiper
               modules={[Navigation]}
-              direction="vertical"
+              direction={isMobile ? "horizontal" : "vertical"}
               spaceBetween={10}
-              slidesPerView={6}
+              slidesPerView={isMobile ? 2 : 6}
               style={{
-                height: 350,
+                height: isMobile ? "fit-content" : 350,
+                width: isMobile ? "100%" : "fit-content",
               }}
               onInit={(swiper) => {
                 swiper.params.navigation.prevEl = prevRef.current;
