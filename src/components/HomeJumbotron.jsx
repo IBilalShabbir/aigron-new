@@ -19,9 +19,9 @@ export default function HomeJumbotron() {
             </div>
             <button
               onClick={() => {
-                document.getElementById("footer").scrollIntoView({
-                  behavior: "smooth",
-                });
+                document
+                  .getElementById("footer")
+                  .scrollIntoView({ befavior: "smooth" });
               }}
               className="home__section__overlay__link"
             >

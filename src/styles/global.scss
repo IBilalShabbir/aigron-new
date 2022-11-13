@@ -100,10 +100,16 @@ body {
   border-radius: 5px;
   text-decoration: none;
   border: 1px solid white;
+  cursor: pointer;
 }
 .jumbotron__overlay__button:hover {
   background-color: transparent;
   color: white;
+}
+@media (max-width: 1366px) {
+  .jumbotron__overlay__content {
+    max-width: 1200px;
+  }
 }
 @media (max-width: 1200px) {
   .jumbotron__img {

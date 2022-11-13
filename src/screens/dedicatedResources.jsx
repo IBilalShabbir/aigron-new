@@ -25,9 +25,9 @@ export default function DedicatedResources() {
             </div>
             <button
               onClick={() => {
-                docmment
+                document
                   .getElementById("footer")
-                  .scrollIntoView({ behavior: "smooth" });
+                  .scrollIntoView({ befavior: "smooth" });
               }}
               className="jumbotron__overlay__button"
             >

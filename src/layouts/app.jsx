@@ -6,13 +6,13 @@ export default function App({ not404 }) {
   const { pathname } = useLocation();
   const pageVariants = {
     initial: {
-      opacity: 0.1,
+      opacity: 0,
     },
     in: {
       opacity: 1,
     },
     out: {
-      opacity: 0.1,
+      opacity: 0,
     },
   };
 

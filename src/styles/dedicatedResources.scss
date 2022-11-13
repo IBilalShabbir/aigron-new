@@ -63,6 +63,11 @@
   background: linear-gradient(45deg, #17bcbc, #4463c3);
   cursor: pointer;
 }
+@media (max-width: 1366px) {
+  .hiring__about__details {
+    max-width: 1200px;
+  }
+}
 @media (max-width: 1150px) {
   .hiring__about {
     display: none;
