@@ -1,5 +1,5 @@
 import React from "react";
-import { dedicatedResourcesBg } from "../assets";
+import { dedicatedResourcesBg, hiringProcess } from "../assets";
 
 export default function DedicatedResources() {
   return (
@@ -28,6 +28,13 @@ export default function DedicatedResources() {
             Get in Touch
           </button>
         </div>
+      </div>
+      <div className="recruitment__img__wrapper">
+        <img
+          src={hiringProcess}
+          alt="hiringProcess"
+          className="recruitment__img"
+        />
       </div>
     </>
   );

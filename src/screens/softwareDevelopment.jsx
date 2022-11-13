@@ -1,5 +1,5 @@
 import React from "react";
-import { softwareDevelopment } from "../assets";
+import { howWeWork, softwareDevelopment } from "../assets";
 
 export default function SoftwareDevelopment() {
   return (
@@ -28,6 +28,9 @@ export default function SoftwareDevelopment() {
             Get in Touch
           </button>
         </div>
+      </div>
+      <div className="recruitment__img__wrapper">
+        <img src={howWeWork} alt="howWeWork" className="recruitment__img" />
       </div>
     </>
   );
