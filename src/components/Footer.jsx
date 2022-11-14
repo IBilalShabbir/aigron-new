@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="footer__content__top">
           <div className="footer__content__top__left">
             <div className="footer__content__top__left__heading">
-              Contact us AI and Data projects
+              Contact us for AI and Data projects
             </div>
             <div className="footer__content__top__left__entry">
               <svg

@@ -177,7 +177,7 @@
   align-items: flex-start;
 }
 .footer__content__bottom__img {
-  margin-right: 2em;
+  margin-right: 4em;
 }
 .footer__content__bottom__content {
   display: -webkit-box;
@@ -252,6 +252,7 @@
   }
   .footer__content__bottom__img {
     margin-bottom: 1em;
+    margin-right: 0em;
   }
 }
 @media (max-width: 600px) {
