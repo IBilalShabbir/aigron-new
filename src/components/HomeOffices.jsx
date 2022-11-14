@@ -1,5 +1,5 @@
 import React from "react";
-import { Germany, Kuwait, map, Netherland, Pakistan } from "../assets";
+import { Germany, Kuwait, map, Netherland, Singapore } from "../assets";
 
 export default function HomeOffices() {
   return (
@@ -8,8 +8,8 @@ export default function HomeOffices() {
       <img src={map} alt="map" className="home__offices__img" />
       <div className="home__offices__content">
         <HomeOfficesEntry
-          img={Pakistan}
-          name="Pakistan"
+          img={Singapore}
+          name="Singapore"
           phone="+965 99100538"
           email="kw@aigron.com"
           address="Al-Farwaniya, Am Nimran Complex Habib Al-Munawar Street, Mezzanine 2, Office 5"

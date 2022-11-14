@@ -140,6 +140,17 @@
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.8);
   border-radius: 10px;
+  animation: header__panel__animation 0.5s ease-in-out;
+}
+@keyframes header__panel__animation {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 .header__panel__entry {
   -webkit-box-flex: 1;
@@ -257,6 +268,12 @@
   }
 }
 @media (max-width: 600px) {
+  .header__panel {
+    padding: 1em 0em;
+  }
+  .header__panel__entry {
+    padding: 0.5em 1em;
+  }
   .header__panel__entry__icon {
     margin-right: 1.5em;
   }
