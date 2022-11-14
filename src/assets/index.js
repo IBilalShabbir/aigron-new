@@ -27,3 +27,12 @@ export { default as dedicatedResourcesAboutBg } from "./dedicatedResourcesAboutB
 export { default as softwareDevelopmentimg } from "./softwareDevelopmentimg.png";
 export { default as softwareDevelopmentabout } from "./softwareDevelopmentabout.png";
 export { default as map } from "./map.png";
+export { default as sustainabilityBanner } from "./sustainabilityBanner.png";
+export { default as Automotive } from "./Automotive.png";
+export { default as Energy } from "./Energy.png";
+export { default as Fintech } from "./Fintech.png";
+export { default as Healthcare } from "./Healthcare.png";
+export { default as HighTech } from "./HighTech.png";
+export { default as Logistics } from "./Logistics.png";
+export { default as OilGas } from "./OilGas.png";
+export { default as Telecom } from "./Telecom.png";
