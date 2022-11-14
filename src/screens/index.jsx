@@ -4,7 +4,7 @@ import {
   HomeJumbotron,
   HomeServices,
   HomeExpertise,
-  HomeIndustries,
+  // HomeIndustries,
   HomeOffices,
 } from "components";
 
@@ -15,7 +15,7 @@ export default function index() {
       <HomeAbout />
       <HomeServices />
       <HomeExpertise />
-      <HomeIndustries />
+      {/* <HomeIndustries /> */}
       <HomeOffices />
     </>
   );

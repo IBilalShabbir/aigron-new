@@ -3,7 +3,7 @@ import { Germany, Kuwait, map, Netherland, Pakistan } from "../assets";
 
 export default function HomeOffices() {
   return (
-    <div className="home__offices">
+    <div className="home__offices" style={{ marginTop: "7em" }}>
       <div className="home__offices__heading heading">Offices</div>
       <img src={map} alt="map" className="home__offices__img" />
       <div className="home__offices__content">
