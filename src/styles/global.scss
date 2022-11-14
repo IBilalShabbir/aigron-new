@@ -4,6 +4,7 @@
 *,
 *::after,
 *::before {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: "Montserrat", sans-serif;
@@ -24,6 +25,8 @@ a:hover,
 button:hover,
 input:hover,
 input:focus {
+  -webkit-transition: 300ms ease-in-out;
+  -o-transition: 300ms ease-in-out;
   transition: 300ms ease-in-out;
 }
 body {
@@ -54,18 +57,45 @@ body {
   height: 100%;
   padding: 0em 2em;
   padding-bottom: 10em;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(35, 107, 189, 0.7)),
+    to(rgba(7, 60, 119, 0.9))
+  );
+  background: -o-linear-gradient(
+    rgba(35, 107, 189, 0.7),
+    rgba(7, 60, 119, 0.9)
+  );
   background: linear-gradient(rgba(35, 107, 189, 0.7), rgba(7, 60, 119, 0.9));
 }
 .jumbotron__overlay__content {
   width: 100%;
   max-width: 1366px;
   padding: 0em auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
   padding: 0em 2em;
 }
@@ -93,8 +123,14 @@ body {
   color: black;
   height: 40px;
   background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   padding: 0em 2em;
   border-radius: 5px;
@@ -141,6 +177,8 @@ body {
     font-size: 16px;
   }
   .jumbotron__overlay__content {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding: 0em;
   }
