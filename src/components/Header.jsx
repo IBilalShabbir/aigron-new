@@ -1,7 +1,7 @@
 import React, { useLayoutEffect } from "react";
 import { ChevronDown, Menu, X } from "react-feather";
 import { Link } from "../Router";
-import { logo, usaFlog } from "../assets";
+import { logo, logoDark, usaFlog } from "../assets";
 import OutsideClickHandler from "react-outside-click-handler";
 
 export default function Header() {
@@ -465,7 +465,7 @@ export default function Header() {
         }
       }}
     >
-      <div className="header">
+      <div className={isMenuOpen ? "header header__active" : "header"}>
         <div
           className="header__content"
           onClick={() => {
@@ -478,7 +478,11 @@ export default function Header() {
           }}
         >
           <Link to="/" className="header__content__logo">
-            <img src={logo} alt="logo" className="header__content__logo__img" />
+            <img
+              src={isMenuOpen ? logoDark : logo}
+              alt="logo"
+              className="header__content__logo__img"
+            />
           </Link>
           {isNavOpen && (
             <div className="header__content__nav">
@@ -552,15 +556,17 @@ export default function Header() {
             >
               Get in Touch
             </button>
-            <div className="header__content__actions__language">
-              <img
-                src={usaFlog}
-                alt="usaFlog"
-                className="header__content__actions__language__img"
-              />
-              Eng
-              <ChevronDown size={20} color="currentColor" />
-            </div>
+            <select
+              name=""
+              id=""
+              className="header__content__actions__language"
+              placeholder="EN"
+            >
+              <option value="EN">EN</option>
+              <option value="NL">NL</option>
+              <option value="DE">DE</option>
+              <option value="AR">AR</option>
+            </select>
             <button
               className="header__content__actions__menu"
               onClick={() => {

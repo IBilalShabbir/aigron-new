@@ -16,6 +16,7 @@ export { default as homeAboutBg } from "./homeAboutBg.png";
 export { default as howWeWork } from "./howWeWork.png";
 export { default as usaFlog } from "./usaFlog.png";
 export { default as logo } from "./logo.svg";
+export { default as logoDark } from "./logoDark.svg";
 export { default as icon } from "./icon.png";
 export { default as Germany } from "./Germany.png";
 export { default as Singapore } from "./Singapore.png";
